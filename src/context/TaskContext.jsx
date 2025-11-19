@@ -3,7 +3,7 @@ import axios from "axios";
 
 const TaskContext = createContext();
 
-const API_BASE = import.meta.env.FRONTEND_URL;
+const API_BASE = import.meta.env.VITE_API_URL;
 
 export const TaskProvider = ({ children }) => {
   const [boards, setBoards] = useState([]);
